@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Luke Mitchell</title>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<body>
+		<div id="container">
+			<div id="spacer">
+			</div>
+			<div id="title">
+				<span class="title-left">LUKE</span><span class="title-right">MITCHELL</span>
+			</div>
+			<div id="top">
+				<div id="box"></div>
+			</div>
+			<div id="content">
+				<pre class="prettyprint" style="border: 0;">
+float depth(int xl, int xr, float T, float f)
+{
+  return (f * T) / (float)(xl - xr);
+}
+
+std::vector<Rect> faceDetect(Mat &frame)
+{ 
+  std::vector<Rect> faces;
+  logo_cascade.detectMultiScale( frame, faces, 1.1, 1, 0|CV_HAAR_SCALE_IMAGE, Size(50, 50), Size(500,500) );
+
+  for( int i = 0; i < faces.size(); i++ )
+  {
+    rectangle(frame, Point(faces[i].x, faces[i].y), Point(faces[i].x + faces[i].width, faces[i].y + faces[i].height), Scalar( 0, 255, 0 ), 2);
+  }
+  
+  return faces;
+}
+				</pre>
+			</div>
+			<div id="bottom">
+				<div id="info">
+					I design and create cryptocurrency solutions and work as a technology consultant; you can contact me <a href="mailto:hi@lukemitchell.co">here</a>.
+				</div>
+				<div id="nav">
+					<ul>
+						<li><a href="#">Curriculum vitae</a></li> &bull;
+						<li><a href="https://twitter.com/LukeCrypto">Twitter</a></li> &bull;
+						<li><a href="https://github.com/lukem512">Github</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			Rainbow.color();
+		</script>
+	</body>
+</html>
