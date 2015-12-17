@@ -10,11 +10,35 @@ html {
 	font-family: Verdana, Geneva, sans-serif;
 
 	/* Background image for title page */
-	background: url(img/moss-2880.jpg) no-repeat center center fixed; 
+	background: url(img/moss-1024.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        background: url(img/moss-1920.jpg) no-repeat center center fixed; 
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        background: url(img/moss-2880.jpg) no-repeat center center fixed; 
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    html {
+        background: url(img/moss-3600.jpg) no-repeat center center fixed; 
+    }
+}
+
+@media screen and (min-width: 3600px) {
+    html {
+        background: url(img/moss.jpg) no-repeat center center fixed; 
+    }
 }
 
 #menu {
