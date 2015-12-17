@@ -1,56 +1,91 @@
 <html>
-<head>
-<title>Luke Mitchell</title>
-<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-<meta name="google-site-verification" content="YPas9eCGLSX2oX4MpQnVQ9XzrTX34PpH-RoAw8QKlzA" />
-<style>
- /* http://paletton.com/#uid=23e0u1kllllaFw0g0qFqFg0w0aFkllllaFw0g0qFqFg0w0aF */
+	<head>
 
- body {
-  background: #246b61;
-  font-family: 'Roboto Slab', serif;
-  line-height: 1.8em;
-  text-align: center;
- }
+		<!--
 
- div {
-  margin: 150px auto;
-  width: 70%;
- }
+			Hello! Welcome to my world...
+				- Luke
 
- a {
-  text-align: center;
-  color: #0D5047;
-  font-size: 1.1em;
-  text-decoration: none;
- }
+		-->
 
- a:hover {
-  text-decoration: underline;
- }
+		<title>Luke Mitchell</title>
+		<link href='https://fonts.googleapis.com/css?family=	Ek+Mukta:400,500' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="home" class="page">
+			<h1 id="name">Luke<br />Mitchell</h1>
+		</div>
 
- p {
-  color: #00352e;
-  margin: 0;
- }
+		<div id="menu">
+			<span id="menu-home" class="menu-item">
+				<a class="scroll" href="#home">Home</a>
+			</span>
+			<span id="menu-me" class="menu-item">
+				<a class="scroll" href="#me">Me</a>
+			</span>
+			<span id="menu-portfolio" class="menu-item">
+				<a class="scroll" href="#portfolio">Portfolio</a>
+			</span>
+			<span id="menu-contact" class="menu-item">
+				<a class="scroll" href="#contact">Contact</a>
+			</span>
+		</div>
 
- img {
-  margin: 25px;
- }
+		<div id="me" class="page">
+			<h1>Me</h1>
+			<p>Hello! I'm Luke and I like to <a href="https://github.com/lukem512" target="_blank">make things</a>. I'm currently finishing my fourth year of Computer Science at the <a href="http://www.bris.ac.uk/" target="_blank">University of Bristol</a>.</p>
 
- #title {
-  font-size: 3em;
- }
-</style>
-</head>
+			<p>I specialise in cryptocurrency and have been working as a consultant in the field since mid-2014. I also tinker with web technologies, simulations, app development and generative art. I use <span class="lang">C++</span>, <span class="lang">Python</span> and <span class="lang">Node</span> day-to-day.</p>
 
-<body>
-<div>
- <p id="title">Luke Mitchell</p>
- <p>Software design and cryptocurrency solutions</p>
- <img src="img/pencil.svg" height="200">
- <p><a href="mailto:hi@lukemitchell.co">hi@lukemitchell.co</a> - <a href="https://twitter.com/lukecrypto">@LukeCrypto</a></p>
-</div>
-</body>
+			<p>When I make it outside I like to travel and I spent the summer <a href="https://www.google.com/maps/d/viewer?hl=en&mid=zhcqZc1DGuUY.kjmQLFfcLs6E" target="_blank">cycling</a> across Europe - and I've done so by hitch-hiking before! I'm also a keen hiker, a permaculturalist, an amateur photographer and a yogi (not to mention a lover of labels).</p>
+		</div>
+
+		<div id="portfolio" class="page">
+			<h1>Portfolio</h1>
+			<p>I should populate this. I have lots to put on here, much of which can be found lurking in my <a href="https://github.com/lukem512" target="_blank">GitHub</a> repositories, but that's a job for another day.</p>
+		</div>
+
+		<div id="contact" class="page">
+			<h1>Contact</h1>
+			<p>You can get in touch by emailing <a href="mailto:hi@lukemitchell.co">hi@lukemitchell.co</a>, by tweeting me <a href="https://twitter.com/lukecrypto">@LukeCrypto</a> or visiting me in Bristol, where I spend most of my time.</p>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.1268436365194!2d-2.6052339484380433!3d51.45582752219343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718dda19bc16f1%3A0xf749ec5ecd60d00!2sMerchant+Venturers+Bldg%2C+Woodland+Rd%2C+Bristol%2C+City+of+Bristol+BS8!5e0!3m2!1sen!2suk!4v1450319017274" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+		<script>
+			// Smoothly scroll to anchors
+			$(".scroll").click(function(event){
+		        event.preventDefault();
+		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000, 'swing');
+	    	});
+
+			// Fix the menu at the top of the screen
+			var firstOffset = 0;
+			var firstOffsetSet = false;
+			$(window).scroll(function(e){ 
+				var $el = $('#menu'); 
+				var offset = $el.offset().top;
+
+				var isPositionFixed = ($el.css('position') == 'fixed');
+				if ($(this).scrollTop() > offset && !isPositionFixed) { 
+					if (!firstOffsetSet) {
+						firstOffset = $(this).scrollTop();
+						firstOffsetSet = true;
+					}
+					$el.css({
+						'position': 'fixed',
+						'top': '0'
+					}); 
+				}
+				if (firstOffsetSet && $(this).scrollTop() < firstOffset) {
+					$el.css({
+						'position': 'absolute',
+						'top': '',
+						'bottom': '0'
+					});
+				}
+			});
+		</script>
+	</body>
 </html>
-

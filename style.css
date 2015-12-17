@@ -1,106 +1,116 @@
+/* http://paletton.com/#uid=63G0u0k5EIQ0xZ52yS-9LxheZrd (adj. 3, top-left) */
+
 html,
 body {
-   	margin: 0;
-   	padding: 0;
-   	height: 100%;
-
-   	/* Default font */
-   	font-family: 'Roboto', sans-serif;
-
-   	/* Colour */
-	background: white;
+	padding: 0;
+	margin: 0;
 }
 
-#container {
-	height: 100%;
-	min-height: 100%;
-   	position: relative;
-   	margin-left: 5%;
-	margin-right: 5%;
+html {
+	font-family: Verdana, Geneva, sans-serif;
+
+	/* Background image for title page */
+	background: url(img/moss.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-#spacer {
-	height: 5%;
-	min-height: 5%;
-}
-
-#title {
-	position: relative;
-	font-size: 4em;
-}
-
-.title-left {
-	color: #C2C2C4;
-}
-
-.title-right {
-	color: #E4E4E6;
-}
-
-#top {
-	height: 10%;
-
-	/* Colour */
-	background: #9AA9A1;
-}
-
-#top #box {
-	height: 100%;
-	width: 10%;
-	float: left;
-
-	/* Colour */
-	background: #E4E4E6;
-}
-
-#bottom {
+#menu {
+	font-family: 'Ek Mukta', sans-serif;
+	display: inline;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding-top: 1%;
-	border-top: 1px solid #E4E4E6;
-
-	/* Colour */
-	background: white;
-
-	/* Height of the bottom element */
-	height: 100px;
+	background-color: #000000;
+	opacity: 0.6;
+	padding-top: 0.2%;
+	padding-bottom: 1%;
+	height: 4%;
 }
 
-#nav {
-	position: relative;
-	float: right;
+.menu-item {
+	padding: 1%;
+	height: 4%;
+	font-size: 1.5em;
 	vertical-align: middle;
 }
 
-#nav ul {
-	list-style-type: none;
-	list-style-position:inside;
-    margin:0;
-    padding:0;
-}
-
-#nav ul li {
-	display: inline;
-}
-
-#nav a {
-	text-decoration: underline;
-}
-
-#nav a:visited {
-	color: black;
-}
-
-#nav a:hover {
+.menu-item a {
 	text-decoration: none;
 }
 
-#info {
-	float: left;
-}
-
-#info a {
-	color: black;
+.menu-item a:hover {
 	text-decoration: underline;
 }
+
+span#menu-home,
+span#menu-home a {
+	color: #ADBACE;
+}
+
+span#menu-me,
+span#menu-me a {
+	color: #7C8FAC;
+}
+
+span#menu-portfolio,
+span#menu-portfolio a {
+	color: #D8DEE8;
+}
+
+span#menu-contact,
+span#menu-contact a {
+	color: #526A8F;
+}
+
+.page {
+	height: 100%;
+	padding: 1%;
+	padding-top: 5%;
+}
+
+.page#home {
+	padding-left: 0.5%;
+	padding-top: 0%;
+	padding-bottom: 0%;
+}
+
+.page#me {
+	background-color: #7C8FAC;
+}
+
+.page#portfolio {
+	background-color: #D8DEE8;
+}
+
+.page#contact {
+	background-color: #526A8F;
+}
+
+#name {
+	font-family: 'Ek Mukta', sans-serif;
+	line-height: 80%;
+	position: absolute;
+	bottom: 0;
+	font-size: 6em;
+}
+
+h1 {
+	font-family: 'Ek Mukta', sans-serif;
+}
+
+p a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+p .lang {
+	font-family: Courier, monospace;
+}
+
+@media print {
+    .page { page-break-after: always; }
+			}
