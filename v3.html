@@ -12,6 +12,8 @@
 
 			html {
 				font-family: Verdana, Geneva, sans-serif;
+
+				/* Background image for title page */
 				background: url(img/moss.jpg) no-repeat center center fixed; 
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
@@ -68,6 +70,18 @@
 				padding-top: 5%;
 			}
 
+			.page#me {
+				background-color: #DDDAEA;
+			}
+
+			.page#projects {
+				background-color: #FFF0B1;
+			}
+
+			.page#contact {
+				background-color: #D9B473;
+			}
+
 			#name {
 				position: absolute;
 				bottom: 0;
@@ -120,12 +134,29 @@
 	    	});
 
 			// Fix the menu at the top of the screen
+			var firstOffset = 0;
+			var firstOffsetSet = false;
 			$(window).scroll(function(e){ 
 				var $el = $('#menu'); 
 				var offset = $el.offset().top;
+
 				var isPositionFixed = ($el.css('position') == 'fixed');
 				if ($(this).scrollTop() > offset && !isPositionFixed) { 
-					$el.css({'position': 'fixed', 'top': '0'}); 
+					if (!firstOffsetSet) {
+						firstOffset = $(this).scrollTop();
+						firstOffsetSet = true;
+					}
+					$el.css({
+						'position': 'fixed',
+						'top': '0'
+					}); 
+				}
+				if (firstOffsetSet && $(this).scrollTop() < firstOffset) {
+					$el.css({
+						'position': 'absolute',
+						'top': '',
+						'bottom': '0'
+					});
 				}
 			});
 		</script>
