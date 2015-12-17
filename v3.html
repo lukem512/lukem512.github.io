@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Luke Mitchell</title>
+		<style>
+			/* http://paletton.com/#uid=73G0u0k5EIQ0xZ52yS-9LxheZrd */
+
+			html,
+			body {
+				padding: 0;
+				margin: 0;
+			}
+
+			html {
+				font-family: Verdana, Geneva, sans-serif;
+				background: url(img/moss.jpg) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			#menu {
+				display: inline;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background-color: #000000;
+				opacity: 0.6;
+				padding-top: 0.2%;
+				padding-bottom: 1%;
+				height: 4%;
+			}
+
+			.menu-item {
+				padding: 1%;
+				width: 25%;
+				font-size: 1.5em;
+			}
+
+			.menu-item a {
+				text-decoration: none;
+				color: #000000;
+			}
+
+			span#menu-home,
+			span#menu-home a {
+				color: #ADBACE;
+			}
+
+			span#menu-me,
+			span#menu-me a {
+				color: #DDDAEA;
+			}
+
+			span#menu-projects,
+			span#menu-projects a {
+				color: #FFF0B1;
+			}
+
+			span#menu-contact,
+			span#menu-contact a {
+				color: #D9B473;
+			}
+
+			.page {
+				height: 100%;
+				padding: 1%;
+				padding-top: 5%;
+			}
+
+			#name {
+				position: absolute;
+				bottom: 0;
+				font-size: 6em;
+			}
+
+			@media print {
+			    footer { page-break-after: always; }
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="home" class="page">
+			<h1 id="name">Luke<br />Mitchell</h1>
+		</div>
+
+		<div id="menu">
+			<span id="menu-home" class="menu-item">
+				<a class="scroll" href="#home">Home</a>
+			</span>
+			<span id="menu-me" class="menu-item">
+				<a class="scroll" href="#me">Me</a>
+			</span>
+			<span id="menu-projects" class="menu-item">
+				<a class="scroll" href="#projects">Projects</a>
+			</span>
+			<span id="menu-contact" class="menu-item">
+				<a class="scroll" href="#contact">Contact</a>
+			</span>
+		</div>
+
+		<div id="me" class="page">
+			<h1>Me</h1>
+		</div>
+
+		<div id="projects" class="page">
+			<h1>Projects</h1>
+		</div>
+
+		<div id="contact" class="page">
+			<h1>Contact</h1>
+		</div>
+
+		<script>
+			// Smoothly scroll to anchors
+			$(".scroll").click(function(event){
+		        event.preventDefault();
+		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000, 'swing');
+	    	});
+
+			// Fix the menu at the top of the screen
+			$(window).scroll(function(e){ 
+				var $el = $('#menu'); 
+				var offset = $el.offset().top;
+				var isPositionFixed = ($el.css('position') == 'fixed');
+				if ($(this).scrollTop() > offset && !isPositionFixed) { 
+					$el.css({'position': 'fixed', 'top': '0'}); 
+				}
+			});
+		</script>
+	</body>
+</html>
