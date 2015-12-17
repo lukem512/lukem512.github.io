@@ -10,7 +10,7 @@ html {
 	font-family: Verdana, Geneva, sans-serif;
 
 	/* Background image for title page */
-	background: url(img/moss-1024.jpg) no-repeat center center fixed; 
+	background: url(../images/moss-1024.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -19,25 +19,25 @@ html {
 
 @media screen and (min-width: 1024px) {
     html {
-        background: url(img/moss-1920.jpg) no-repeat center center fixed; 
+        background: url(../images/moss-1920.jpg) no-repeat center center fixed; 
     }
 }
 
 @media screen and (min-width: 1920px) {
     html {
-        background: url(img/moss-2880.jpg) no-repeat center center fixed; 
+        background: url(../images/moss-2880.jpg) no-repeat center center fixed; 
     }
 }
 
 @media screen and (min-width: 2880px) {
     html {
-        background: url(img/moss-3600.jpg) no-repeat center center fixed; 
+        background: url(../images/moss-3600.jpg) no-repeat center center fixed; 
     }
 }
 
 @media screen and (min-width: 3600px) {
     html {
-        background: url(img/moss.jpg) no-repeat center center fixed; 
+        background: url(../images/moss.jpg) no-repeat center center fixed; 
     }
 }
 
@@ -123,6 +123,11 @@ span#menu-contact a {
 
 h1 {
 	font-family: 'Ek Mukta', sans-serif;
+	font-size: 3em;
+}
+
+h2 {
+	text-decoration: underline;
 }
 
 p a {
@@ -133,6 +138,11 @@ p a {
 
 p .lang {
 	font-family: Courier, monospace;
+}
+
+#map {
+	width: 500px;
+	height: 400px;
 }
 
 @media print {
