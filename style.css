@@ -112,5 +112,7 @@ p .lang {
 }
 
 @media print {
-    .page { page-break-after: always; }
-			}
+    .page {
+    	page-break-after: always;
+    }
+}
