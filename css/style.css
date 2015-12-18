@@ -93,6 +93,18 @@ span#menu-contact a {
 	height: 100%;
 	padding: 1%;
 	padding-top: 5%;
+
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-fill: balance;
+    -moz-column-fill: balance;
+    column-fill: balance;
+
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
 }
 
 .page#home {
@@ -124,10 +136,20 @@ span#menu-contact a {
 h1 {
 	font-family: 'Ek Mukta', sans-serif;
 	font-size: 3em;
+
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all;
 }
 
 h2 {
 	text-decoration: underline;
+}
+
+p {
+	-webkit-break-inside: avoid;
+	-moz-break-inside: avoid;
+	break-inside: avoid;
 }
 
 p a {
@@ -136,8 +158,21 @@ p a {
 	color: black;
 }
 
-p .lang {
+.lang {
 	font-family: Courier, monospace;
+}
+
+.addr {
+	font-weight: bold;
+}
+
+div.content-group {
+	margin-top: 2em;
+
+	/* Avoid spreading across multiple columns */
+	-webkit-break-inside: avoid;
+	-moz-break-inside: avoid;
+	break-inside: Avoid;
 }
 
 #map {
