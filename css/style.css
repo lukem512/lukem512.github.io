@@ -55,6 +55,12 @@ html {
 	z-index: 100;
 }
 
+@media all and (max-width: 600px) {
+	#menu {
+		padding-bottom: 4% !important;
+	}
+}
+
 .menu-item {
 	padding: 1%;
 	height: 4%;
