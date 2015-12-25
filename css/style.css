@@ -184,15 +184,9 @@ p a {
 	display: flex;
 }
 
-.flexbox-container > div,
-.flexbox-container > p {
+.column-wrapper > div,
+.column-wrapper > p {
 	width: 50%;
-	padding: 1em;
-}
-
-.flexbox-container > div:first-child,
-.flexbox-container > p:first-child {
-	margin-right: 2em;
 }
 
 .column-1 {
