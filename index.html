@@ -122,24 +122,22 @@
 	    	});
 
 			// Fix the menu at the top of the screen
-			var firstOffset = 0;
-			var firstOffsetSet = false;
 			$(window).scroll(function(e){ 
 				var $el = $('#menu'); 
 				var offset = $el.offset().top;
-
+				var menuTop = $(window).height() - $el.height();
 				var isPositionFixed = ($el.css('position') == 'fixed');
+
 				if ($(this).scrollTop() > offset && !isPositionFixed) { 
-					if (!firstOffsetSet) {
-						firstOffset = $(this).scrollTop();
-						firstOffsetSet = true;
-					}
+					console.log('set position to fixed');
 					$el.css({
 						'position': 'fixed',
 						'top': '0'
 					}); 
 				}
-				if (firstOffsetSet && $(this).scrollTop() < firstOffset) {
+
+				if ($(this).scrollTop() < menuTop && isPositionFixed) {
+					console.log('set position to absolute');
 					$el.css({
 						'position': 'absolute',
 						'top': '',
