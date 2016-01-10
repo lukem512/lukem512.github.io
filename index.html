@@ -129,7 +129,6 @@
 				var isPositionFixed = ($el.css('position') == 'fixed');
 
 				if ($(this).scrollTop() > offset && !isPositionFixed) { 
-					console.log('set position to fixed');
 					$el.css({
 						'position': 'fixed',
 						'top': '0'
@@ -137,7 +136,6 @@
 				}
 
 				if ($(this).scrollTop() < menuTop && isPositionFixed) {
-					console.log('set position to absolute');
 					$el.css({
 						'position': 'absolute',
 						'top': '',
