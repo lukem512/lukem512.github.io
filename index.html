@@ -22,6 +22,11 @@
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</head>
 	<body>
+		<script type="text/javascript" charset="utf-8">
+			// Show some console love
+			console.log('Sorry about the errors. These are Google and YouTube\'s doing and I\'m hoping, one day soon, they will do something about them!');
+		</script>
+
 		<div id="home" class="page">
 			<a name="home">
 				<h1 id="name">Luke<br />Mitchell</h1>
@@ -116,7 +121,7 @@
 
 		<script type="text/javascript" charset="utf-8">
 			// Smoothly scroll to anchors
-			$(".scroll").click(function(event){
+			$('.scroll').click(function(event){
 		        event.preventDefault();
 		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000, 'swing');
 	    	});
