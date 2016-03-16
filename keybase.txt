@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/lukemitchell
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lukemitchell.co
+  * I am lukemitchell (https://keybase.io/lukemitchell) on keybase.
+  * I have a public key ASAe4wUZXippIpjuPFpakUPhcgQSohhKCbus6vW-ysQPqQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ec42decef29ee2e12dfd04d01576fae404e724990225e4392d083220448a344a0a",
+            "host": "keybase.io",
+            "kid": "01201ee305195e2a692298ee3c5a5a9143e1720412a2184a09bbaceaf5becac40fa90a",
+            "uid": "07012d05cfdc0590f56b0b3a5fd6f419",
+            "username": "lukemitchell"
+        },
+        "service": {
+            "hostname": "lukemitchell.co",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.13"
+    },
+    "ctime": 1458118792,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1458118737,
+        "hash": "f7515ff2e6b3828233f68cbc73be7f515ae43d50e00be10c6de9fab1d25d114d7a8957fb5a495481b991059b2c867a38d9208fec5cd4b51944a9235fde7454f2",
+        "seqno": 408470
+    },
+    "prev": "5d131884ecccdc71d948c9c15503ed207712f85c1255a87764495f0b7b51af52",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgHuMFGV4qaSKY7jxaWpFD4XIEEqIYSgm7rOr1vsrED6kKp3BheWxvYWTFAvx7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZWM0MmRlY2VmMjllZTJlMTJkZmQwNGQwMTU3NmZhZTQwNGU3MjQ5OTAyMjVlNDM5MmQwODMyMjA0NDhhMzQ0YTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMWVlMzA1MTk1ZTJhNjkyMjk4ZWUzYzVhNWE5MTQzZTE3MjA0MTJhMjE4NGEwOWJiYWNlYWY1YmVjYWM0MGZhOTBhIiwidWlkIjoiMDcwMTJkMDVjZmRjMDU5MGY1NmIwYjNhNWZkNmY0MTkiLCJ1c2VybmFtZSI6Imx1a2VtaXRjaGVsbCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibHVrZW1pdGNoZWxsLmNvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTMifSwiY3RpbWUiOjE0NTgxMTg3OTIsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ1ODExODczNywiaGFzaCI6ImY3NTE1ZmYyZTZiMzgyODIzM2Y2OGNiYzczYmU3ZjUxNWFlNDNkNTBlMDBiZTEwYzZkZTlmYWIxZDI1ZDExNGQ3YTg5NTdmYjVhNDk1NDgxYjk5MTA1OWIyYzg2N2EzOGQ5MjA4ZmVjNWNkNGI1MTk0NGE5MjM1ZmRlNzQ1NGYyIiwic2Vxbm8iOjQwODQ3MH0sInByZXYiOiI1ZDEzMTg4NGVjY2NkYzcxZDk0OGM5YzE1NTAzZWQyMDc3MTJmODVjMTI1NWE4Nzc2NDQ5NWYwYjdiNTFhZjUyIiwic2Vxbm8iOjEzLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQFxwaXHH/nBAtfpr9UCwSa9DhzwmNwJxnTqdodLUoX2FsST8AE2JXl0BMUq5VECdlbPkOqMcOPyQM6VTqnCSOQOoc2lnX3R5cGUgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lukemitchell
+
+==================================================================
