@@ -75,26 +75,29 @@ html {
   margin-bottom: 15px;
 }
 
+@media screen at (min-width: 480px) {}
+	#home {
+		padding: 30px;
+	}
+	.bottom-left {
+		left: 30px;
+	}
+	.bottom-left h1 {
+		font-size: 100px;
+		line-height: 100px;
+		margin-top: 10px;
+	}
+	.bottom-left h2 {
+		font-size: 20px;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+}
+
 @media screen and (min-width: 1024px) {
     html {
         background: url(../images/moss-1920.jpg) no-repeat center center fixed;
-    }
-    #home {
-      padding: 30px;
-    }
-    .bottom-left {
-      left: 30px;
-    }
-    .bottom-left h1 {
-      font-size: 100px;
-      line-height: 100px;
-      margin-top: 10px;
-    }
-    .bottom-left h2 {
-      font-size: 20px;
-      line-height: 20px;
-      margin-top: 10px;
-      margin-bottom: 30px;
     }
 }
 
