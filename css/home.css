@@ -1,0 +1,122 @@
+html {
+	background: url(../images/moss-1024.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#home {
+  padding: 15px;
+}
+
+.top-right {
+  text-align: center;
+  float: right;
+}
+
+.top-right .tile {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.top-right .tile:hover {
+  background-color: rgba(255,255,255,0.6);
+}
+
+.top-right .tile .devicons {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.top-right .tile .fa {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.top-right .tile a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bottom-left {
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+  text-align: left;
+  float: left;
+}
+
+.bottom-left h1, .bottom-left h2 {
+  margin-top: 10px 0 0 0;
+  background-color: rgba(255,255,255,0.3);
+  font-weight: normal;
+  padding: 5px 15px;
+}
+
+.bottom-left h1 {
+  letter-spacing: 7px;
+  font-family: 'Ek Mukta', sans-serif;
+	font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.bottom-left h2 {
+  max-width: 80vw;
+  letter-spacing: 1px;
+  font-family: 'Ek Mukta', sans-serif;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        background: url(../images/moss-1920.jpg) no-repeat center center fixed;
+    }
+    #home {
+      padding: 30px;
+    }
+    .bottom-left {
+      left: 30px;
+    }
+    .bottom-left h1 {
+      font-size: 100px;
+      line-height: 100px;
+      margin-top: 10px;
+    }
+    .bottom-left h2 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        background: url(../images/moss-2880.jpg) no-repeat center center fixed;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    html {
+        background: url(../images/moss-3600.jpg) no-repeat center center fixed;
+    }
+}
+
+@media screen and (min-width: 3600px) {
+    html {
+        background: url(../images/moss.jpg) no-repeat center center fixed;
+    }
+}
