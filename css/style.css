@@ -29,6 +29,10 @@ div#about, div#work {
 	padding: 30px 10vw 10px 10vw;
 }
 
+div#title {
+	padding: 10px 10vw 20px 10vw;
+}
+
 div#contact {
 	padding: 30px 2vw 10px 2vw;
 }
@@ -51,12 +55,14 @@ img.circular {
 	margin-bottom: 20px;
 }
 
-#about h1, #about h2, #about h3 {
+#about h1, #about h2, #about h3,
+#title h1, #title h2, #title h3 {
 	background-color: rgba(255,255,255,0.3);
 	margin-top: 10px;
 	padding: 5px 15px;
 	display: inline-block;
 }
+
 
 h1 {
 	font-weight: normal;
@@ -86,10 +92,18 @@ p a {
 	font-family: Courier, monospace;
 }
 
-.project {
+.project, .block {
 	background-color: rgba(255,255,255,0.3);
 	padding: 5px;
 	margin-bottom: 10px;
+}
+
+.block ul {
+	text-align: left;
+}
+
+.block ul li {
+	padding-bottom: 5px;
 }
 
 #contact h1 {
