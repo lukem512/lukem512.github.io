@@ -27,11 +27,7 @@ body {
   border-radius: 50%;
   transition: all .2s ease-in-out;
 	z-index: 3;
-	float: right;
-}
-
-.top-right .tile:nth-of-type(n+2) {
-	margin-top: 0;
+	float: left;
 	margin-right: 10px;
 }
 
