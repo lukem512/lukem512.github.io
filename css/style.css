@@ -103,7 +103,11 @@ p a {
 }
 
 .block ul li {
-	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.block ul li a {
+	border-bottom: 1px dotted black;
 }
 
 #contact h1 {
