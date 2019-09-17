@@ -39,6 +39,11 @@ div#contact {
 
 div#work {
 	background-color: #C2C2C4;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 a {
@@ -101,10 +106,12 @@ p a {
 	font-family: Courier, monospace;
 }
 
-.project, .block {
+.project, .block, .img {
+	width: 25vw;
+	min-width: 250px;
 	background-color: rgba(255,255,255,0.3);
+	margin: 10px;
 	padding: 10px;
-	margin-bottom: 10px;
 }
 
 .block ul {
@@ -117,10 +124,6 @@ p a {
 
 .block ul li a {
 	border-bottom: 1px dotted black;
-}
-
-.project img {
-	max-width: 100%;
 }
 
 #contact h1 {
@@ -151,8 +154,12 @@ p a {
 	.photo {
 		width: 250px;
 	}
-	div#about, div#work, div#contact {
+	div#about, div#contact {
 		padding: 30px 20vw 10px 20vw;
+	}
+	div#work {
+		padding: 30px 5vw 10px 5vw;
+		align-items: flex-start;
 	}
 }
 
