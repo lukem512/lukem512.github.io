@@ -71,7 +71,7 @@ body {
 
 .bottom-left h1 {
   letter-spacing: 7px;
-  font-family: 'Ek Mukta', sans-serif;
+  font-family: 'Montserrat', arial, sans-serif;
 	font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -82,7 +82,7 @@ body {
 .bottom-left h2 {
   max-width: 80vw;
   letter-spacing: 1px;
-  font-family: 'Ek Mukta', sans-serif;
+  font-family: 'Montserrat', arial, sans-serif;
   text-decoration: none;
   font-size: 10px;
   line-height: 10px;
