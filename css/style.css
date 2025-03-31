@@ -83,6 +83,13 @@ h1 {
 }
 
 h2 {
+  font-weight: normal;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0;
+}
+
+.subtitle {
 	font-weight: normal;
 	text-decoration: none;
 	font-size: 12px;
@@ -102,7 +109,7 @@ p a {
 	margin: 0;
 }
 
-.lang {
+.lang, .part-no {
 	font-family: Courier, monospace;
 }
 
